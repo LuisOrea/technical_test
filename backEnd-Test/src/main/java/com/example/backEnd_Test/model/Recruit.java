@@ -5,16 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "recruits")
 public class Recruit {
 
     //id y generacion automatica
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     //basic info 
     @Column(name = "fullName", length = 100)
@@ -27,11 +29,11 @@ public class Recruit {
 
     //contact info
     private String address;
-    private int numberPhone;
+    private String numberPhone;
     
     @Column(unique = true)
     private String email;
-    private int emergencyNumberPhone;
+    private String emergencyNumberPhone;
 
     //physic & medic info
     private int weight;
