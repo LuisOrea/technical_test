@@ -17,7 +17,7 @@ import com.example.backEnd_Test.service.RecruitService;
 
 @RestController
 @RequestMapping("/api/recruits")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:5173")
 public class RecruitController {
 
     private final RecruitService recruitService;
