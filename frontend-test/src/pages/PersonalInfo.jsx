@@ -81,16 +81,16 @@ export default function PersonalInfo() {
     <>
       <Nav />
 
-      <div className="bg-[#96ac90] min-h-screen flex justify-center items-center flex-col gap-[20px] p-[20px] overflow-x-hidden">
-        <div className="flex flex-col gap-[20px] w-full max-w-[90rem]">
-          <div className="bg-[#fff] p-[20px] rounded-[15px] shadow-lg flex flex-wrap justify-center gap-[20px]">
+      <div className="bg-[#96ac90]  min-h-screen flex justify-center items-center flex-col gap-[20px] p-[20px] ">
+        <div className="flex flex-col gap-[20px] lg:w-[200px] max-w-[90rem]">
+          <div className="bg-[#fff] border p-[20px] rounded-[15px] shadow-lg flex flex-wrap justify-center gap-[20px]">
             <img
               src="perfil.jpg"
               alt="icono-perfil"
               className="w-[200px] h-[200px] rounded-full object-cover flex-shrink-0"
             />
 
-            <div className="flex flex-col gap-[15px] flex-1 min-w-[250px]">
+            <div className="flex flex-col gap-[15px] min-w-[250px] ">
               <InfoSection title="INFORMACION BASICA" fields={basicInfo} />
               <InfoSection title="INFORMACION DE CONTACTO" fields={contactInfo} />
               <InfoSection title="INFORMACION FISICA Y MEDICA" fields={medicalInfo} />
