@@ -7,7 +7,7 @@
  * - fields (Array): Arreglo de objetos con los datos a mostrar. Cada objeto puede tener:
  *    - label (string): Etiqueta del campo.
  *    - value (any): Valor del campo.
- *    - checkbox (boolean, opcional): Indica si el valor es un checkbox.
+ *    - checkbox (boolean): Indica si el valor es un checkbox.
  *
  * Este componente renderiza:
  * - El título de la sección en negritas.

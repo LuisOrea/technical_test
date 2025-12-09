@@ -19,7 +19,7 @@ import axios from "axios";
 export default async function TuitionService(tuition) {
   try {
     const response = await axios.get(`http://localhost:8080/api/recruits/${tuition}`);
-    console.log(response.data); // Mostrar datos en consola (opcional)
+    console.log(response.data); // Mostrar datos en consola 
     return response.data;       // Retornar datos al llamador
   } catch (error) {
     console.error("Error al obtener datos:", error); // Log de error
